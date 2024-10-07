@@ -4,8 +4,8 @@ import java.util.*;
 abstract class A
 {
 	abstract void Circle(double r);
-	abstract void Triangle(int l, int b);
-	abstract void Rectangle(int a);
+	abstract void Triangle(int h, int b);
+	abstract void Square(int a);
 }
 class Shapes extends A
 {
@@ -17,16 +17,16 @@ class Shapes extends A
 	{
 		System.out.println("Area of Triangle is " +(0.5*l*b));		 
 	}
-	void Rectangle(int a)
+	void Square(int a)
 	{
-		System.out.println("Area of Rectangle is " +(a*a));		 
+		System.out.println("Area of Square is " +(a*a));		 
 	}
 	public static void main(String args[])
 	{
 		Shapes obj=new Shapes();
 		obj.Circle(1.5);
 		obj.Triangle(2,5);
-		obj.Rectangle(4);
+		obj.Square(4);
 	}
 }
 
@@ -34,4 +34,4 @@ class Shapes extends A
 Output:
 Area of Circle is 7.064
 Area of Triangle is 5.0
-Area of Rectangle is 16
+Area of Square is 16
