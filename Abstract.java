@@ -13,9 +13,9 @@ class Shapes extends A
 	{
 		System.out.println("Area of Circle is " +(3.14*r*r));
 	}
-	void Triangle(int l, int b)
+	void Triangle(int h, int b)
 	{
-		System.out.println("Area of Triangle is " +(0.5*l*b));		 
+		System.out.println("Area of Triangle is " +(0.5*h*b));		 
 	}
 	void Square(int a)
 	{
