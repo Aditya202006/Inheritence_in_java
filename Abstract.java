@@ -3,30 +3,30 @@
 import java.util.*;
 abstract class A
 {
-	abstract void Circle(double r);
-	abstract void Triangle(int h, int b);
-	abstract void Square(int a);
+	abstract void circle(double r);
+	abstract void triangle(int h, int b);
+	abstract void square(int a);
 }
 class Shapes extends A
 {
-	void Circle(double r)
+	void circle(double r)
 	{
 		System.out.println("Area of Circle is " +(3.14*r*r));
 	}
-	void Triangle(int h, int b)
+	void triangle(int h, int b)
 	{
 		System.out.println("Area of Triangle is " +(0.5*h*b));		 
 	}
-	void Square(int a)
+	void square(int a)
 	{
 		System.out.println("Area of Square is " +(a*a));		 
 	}
 	public static void main(String args[])
 	{
 		Shapes obj=new Shapes();
-		obj.Circle(1.5);
-		obj.Triangle(2,5);
-		obj.Square(4);
+		obj.circle(1.5);
+		obj.triangle(2,5);
+		obj.square(4);
 	}
 }
 
